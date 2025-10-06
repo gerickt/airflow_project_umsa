@@ -1,0 +1,44 @@
+{
+  "fecha_generacion": "2025-10-04T03:53:49.370973",
+  "periodo": {
+    "inicio": "2025-07-01",
+    "fin": "2025-09-30",
+    "trimestre": "Q3 2025",
+    "dias": 92
+  },
+  "fuentes": {
+    "tiktok": "centinela-392820.tiktok.silver_posts",
+    "usdt": "usdt_Q3.xlsx"
+  },
+  "precio": {
+    "inicial": 14.274999999999999,
+    "final": 12.545,
+    "variacion": -1.7299999999999986,
+    "variacion_pct": -12.119089316987733
+  },
+  "actividad": {
+    "total_posts": 136396,
+    "eco_posts": 104303,
+    "dias_con_posts_eco": 92
+  },
+  "correlaciones": {
+    "general": {
+      "precio_vs_total_likes": -0.027063474522960516,
+      "precio_vs_total_views": -0.08107824339974605,
+      "precio_vs_total_shares": 0.19088277100213244,
+      "precio_vs_total_engagement": 0.02584488903053178
+    },
+    "filtrado": {
+      "dias_analizados": 92,
+      "precio_vs_eco_likes_filtrado": -0.08616741584733223,
+      "precio_vs_eco_views_filtrado": -0.06601908247146851,
+      "precio_vs_eco_engagement_filtrado": -0.05835387023743309
+    },
+    "economico": {
+      "precio_vs_eco_likes": -0.08616741584733223,
+      "precio_vs_eco_views": -0.06601908247146851,
+      "precio_vs_eco_shares": 0.017178067290588836,
+      "precio_vs_eco_engagement": -0.05835387023743309
+    }
+  }
+}

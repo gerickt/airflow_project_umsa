@@ -1,0 +1,95 @@
+
+================================================================================
+REPORTE EJECUTIVO: SOCIAL LISTENING vs USDT/BOB - Q3 2025 (BigQuery)
+================================================================================
+
+OBJETIVO: Evaluar correlación entre tipo de cambio USDT/BOB y actividad TikTok
+sobre contenido económico/político en Bolivia durante Q3 2025.
+
+PERIODO ANALIZADO: 2025-07-01 al 2025-09-30 (Q3 2025)
+TOTAL DE DÍAS: 92 días
+FUENTE TIKTOK: BigQuery (centinela-392820.tiktok.silver_posts)
+FUENTE USDT: Excel Q3 (GMT-4)
+
+================================================================================
+I. ANÁLISIS DEL TIPO DE CAMBIO USDT/BOB
+================================================================================
+
+Precio Promedio Inicial:  Bs 14.2750
+Precio Promedio Final:    Bs 12.5450
+Variación Absoluta:       Bs -1.7300
+Variación Porcentual:     -12.12%
+TENDENCIA Q3:             📉 CAÍDA SIGNIFICATIVA
+
+================================================================================
+II. ACTIVIDAD EN TIKTOK (Q3 2025)
+================================================================================
+
+A) ACTIVIDAD GENERAL:
+   - Total de posts:              136,396
+   - Total de vistas:             10,970,693,466
+   - Total de likes:              344,292,086
+   - Engagement total:            539,321,782
+   - Días con posts:              92/92
+
+B) ACTIVIDAD ECONÓMICA/POLÍTICA:
+   - Posts económicos:            104,303 (76.5% del total)
+   - Vistas económicas:           7,087,869,668
+   - Engagement económico:        342,069,460
+   - Días con actividad económica: 92/92
+
+================================================================================
+III. ANÁLISIS DE CORRELACIÓN DE PEARSON
+================================================================================
+
+A) CORRELACIONES GENERALES:
+   Total Likes.................................. -0.0271
+   Total Views.................................. -0.0811
+   Total Shares................................. 0.1909
+   Total Engagement............................. 0.0258
+
+B) CORRELACIONES ECONÓMICAS:
+   Eco Likes.................................... -0.0862
+   Eco Views.................................... -0.0660
+   Eco Shares................................... 0.0172
+   Eco Engagement............................... -0.0584
+
+C) CORRELACIONES FILTRADAS (solo días con actividad económica):
+   Días analizados: 92
+   Eco Likes.................................... -0.0862
+   Eco Views.................................... -0.0660
+   Eco Engagement............................... -0.0584
+
+================================================================================
+IV. HALLAZGOS CLAVE Q3 2025
+================================================================================
+
+1. COBERTURA TEMPORAL:
+   - Análisis completo del Q3 2025 (Julio-Septiembre)
+   - Datos de TikTok extraídos desde BigQuery con conversión UTC → GMT-4
+   - Sincronización perfecta con datos USDT (GMT-4)
+
+2. ACTIVIDAD ECONÓMICA:
+   - El 76.5% de posts están relacionados con economía/política
+   - Permite análisis preciso de impacto del tipo de cambio
+
+3. METODOLOGÍA:
+   - Triple nivel de correlación (general, económico, filtrado)
+   - Filtrado semántico con 25 keywords
+   - Zona horaria Bolivia (GMT-4) en todo el análisis
+
+================================================================================
+V. ARCHIVOS GENERADOS
+================================================================================
+
+Dataset Consolidado:  /opt/airflow/output/social_listening_usdt_q3_bigquery_20251004_035348.parquet
+Reporte Ejecutivo:    /opt/airflow/output/social_listening_usdt_q3_bigquery_20251004_035348_reporte.txt
+Correlaciones JSON:   /opt/airflow/output/social_listening_usdt_q3_bigquery_20251004_035348_correlaciones.json
+
+Fuente TikTok: BigQuery centinela-392820.tiktok.silver_posts
+Fuente USDT:   Excel Q3 2025 (GMT-4)
+
+================================================================================
+Generado el: 2025-10-04 03:53:49
+Pipeline: pipeline_social_listening_usdt_v3_bigquery
+================================================================================

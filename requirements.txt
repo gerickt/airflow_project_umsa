@@ -1,0 +1,47 @@
+# ========================================
+# AIRFLOW PROVIDERS
+# ========================================
+# Provider para PostgreSQL (conexiones, hooks, operators)
+apache-airflow-providers-postgres==5.13.1
+
+# Provider para Google Cloud (BigQuery, GCS, Dataflow, etc.)
+apache-airflow-providers-google>=10.24.0
+
+# Provider estándar (PythonOperator actualizado)
+# apache-airflow-providers-standard>=1.0.0  # Ya viene incluido en Airflow 3.1.0
+
+# ========================================
+# LIBRERÍAS DE PROCESAMIENTO DE DATOS
+# ========================================
+# Pandas para análisis de datos
+pandas>=2.1.0
+
+# Numpy para operaciones numéricas
+numpy>=1.24.0
+
+# Openpyxl para leer archivos Excel (.xlsx)
+openpyxl>=3.1.2
+
+# PyArrow para formato Parquet (más eficiente que pickle)
+pyarrow>=14.0.1
+
+# ========================================
+# BASES DE DATOS
+# ========================================
+# PostgreSQL adapter para Python (versión binaria, no requiere compilación)
+psycopg2-binary>=2.9.9
+
+# SQLAlchemy para ORM (ya viene con Airflow, pero se especifica versión)
+# sqlalchemy>=1.4.0  # Ya incluido en Airflow
+
+# ========================================
+# UTILIDADES OPCIONALES
+# ========================================
+# Para validación de datos (opcional)
+# great-expectations>=0.18.0
+
+# Para conexiones HTTP/REST APIs (opcional)
+# requests>=2.31.0
+
+# Para procesamiento de JSON (ya viene con Python)
+# No requiere instalación adicional

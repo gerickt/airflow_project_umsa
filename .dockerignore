@@ -1,0 +1,34 @@
+# Ignorar directorios grandes que no se necesitan en la imagen
+logs/
+output/
+*.log
+
+# Ignorar archivos temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ignorar archivos de configuración local
+.env
+*.local
+
+# Ignorar archivos de Git
+.git/
+.gitignore
+
+# Ignorar archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignorar datos de ejemplo (si son muy grandes)
+# data/*.csv
+# data/*.xlsx
