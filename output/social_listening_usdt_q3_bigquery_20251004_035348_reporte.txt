@@ -8,7 +8,7 @@ sobre contenido económico/político en Bolivia durante Q3 2025.
 
 PERIODO ANALIZADO: 2025-07-01 al 2025-09-30 (Q3 2025)
 TOTAL DE DÍAS: 92 días
-FUENTE TIKTOK: BigQuery (centinela-392820.tiktok.silver_posts)
+FUENTE TIKTOK: BigQuery (project_id_here.tiktok.silver_posts)
 FUENTE USDT: Excel Q3 (GMT-4)
 
 ================================================================================
@@ -86,7 +86,7 @@ Dataset Consolidado:  /opt/airflow/output/social_listening_usdt_q3_bigquery_2025
 Reporte Ejecutivo:    /opt/airflow/output/social_listening_usdt_q3_bigquery_20251004_035348_reporte.txt
 Correlaciones JSON:   /opt/airflow/output/social_listening_usdt_q3_bigquery_20251004_035348_correlaciones.json
 
-Fuente TikTok: BigQuery centinela-392820.tiktok.silver_posts
+Fuente TikTok: BigQuery project_id_here.tiktok.silver_posts
 Fuente USDT:   Excel Q3 2025 (GMT-4)
 
 ================================================================================

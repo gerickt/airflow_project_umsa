@@ -21,7 +21,7 @@ default_args = {
 }
 
 # CONFIGURACIÓN - Cambiar estos valores
-GCP_PROJECT_ID = 'centinela-392820'  # Tu Project ID de GCP
+GCP_PROJECT_ID = 'project_id_here'  # Tu Project ID de GCP
 GCS_BUCKET = 'tu-bucket-airflow'     # ← Cambiar por tu bucket de GCS (si usas GCS)
 BQ_DATASET = 'tiktok'      # Dataset de BigQuery
 BQ_TABLE = 'silver_posts' # Tabla de BigQuery

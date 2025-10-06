@@ -28,7 +28,7 @@ dag = DAG(
 )
 
 # CONFIGURACIÓN
-GCP_PROJECT_ID = 'centinela-392820'
+GCP_PROJECT_ID = 'project_id_here'
 BQ_DATASET = 'tiktok'
 BQ_TABLE = 'silver_posts'
 
@@ -542,7 +542,7 @@ sobre contenido económico/político en Bolivia durante Q3 2025.
 
 PERIODO ANALIZADO: {df['fecha'].min()} al {df['fecha'].max()} (Q3 2025)
 TOTAL DE DÍAS: {len(df)} días
-FUENTE TIKTOK: BigQuery (centinela-392820.tiktok.silver_posts)
+FUENTE TIKTOK: BigQuery (project_id_here.tiktok.silver_posts)
 FUENTE USDT: Excel Q3 (GMT-4)
 
 {'='*80}
@@ -637,7 +637,7 @@ Dataset Consolidado:  {archivo_parquet}
 Reporte Ejecutivo:    {archivo_parquet.replace('.parquet', '_reporte.txt')}
 Correlaciones JSON:   {archivo_parquet.replace('.parquet', '_correlaciones.json')}
 
-Fuente TikTok: BigQuery centinela-392820.tiktok.silver_posts
+Fuente TikTok: BigQuery project_id_here.tiktok.silver_posts
 Fuente USDT:   Excel Q3 2025 (GMT-4)
 
 {'='*80}
